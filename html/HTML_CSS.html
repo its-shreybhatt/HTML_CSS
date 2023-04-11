@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_CSS</title>
+    <style>
+        body{padding: 2em;}  
+
+        .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: bisque;
+            font-weight: bold;
+            color: brown;
+            padding: 10px;
+        }
+
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: rgb(235, 133, 9);
+            font-weight: bold;
+            color: rgb(14, 0, 0);
+            padding: 10px;
+        }
+
+        .mainContainer{
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContentItem{
+            text-align: left;
+            background: rebeccapurple;
+            order: 2;
+            flex: 1px ;
+        }
+
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem{background: gold; order: 1;}
+        .sideBarRightItem{background: silver; order: 3;}
+
+        .sideBarItem{
+            flex: 1,0,0;
+            border: 0px solid green;
+        }
+    </style>
+</head>
+<body>
+    <header class="headerContainer"><h1>Header Sample</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article><h2>First Article</h2>
+                    <p>its 1st article for practice</p></article>
+                <article><h2>Second Article</h2>
+                    <p>its 2nd article for practice</p></article>
+                <article><h2>Third Article</h2>
+                    <p>its 3rd article for practice</p></article>
+            </section>
+            <sidebar class="sideBarItem sideBarLeftItem">
+                    <div class="center"><p>Left Side Bar</p></div>
+            </sidebar>
+            <sidebar class="sideBarItem sideBarRightItem">
+                    <div class="center"><p>Right Side Bar</p></div>
+            </sidebar>
+        </div>
+    <footer class="footerContainer">Footer Sample</footer>
+</body>
+</html>
