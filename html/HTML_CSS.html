@@ -12,9 +12,9 @@
             display: flex;
             flex-flow: column wrap;
             align-content: center;
-            background-color: bisque;
+            background-color: rgb(49, 224, 14);
             font-weight: bold;
-            color: brown;
+            color: rgb(14, 0, 0);
             padding: 10px;
         }
 
@@ -22,7 +22,7 @@
             display: flex;
             flex-flow: column wrap;
             align-content: center;
-            background-color: rgb(235, 133, 9);
+            background-color: rgb(49, 224, 14);
             font-weight: bold;
             color: rgb(14, 0, 0);
             padding: 10px;
@@ -38,7 +38,7 @@
         .mainContentItem{
             text-align: left;
             background: rebeccapurple;
-            order: 2;
+            order: 1;
             flex: 1px ;
         }
 
@@ -48,7 +48,7 @@
             background: aqua;
         }
 
-        .sideBarLeftItem{background: gold; order: 1;}
+        .sideBarLeftItem{background: gold; order: 2;}
         .sideBarRightItem{background: silver; order: 3;}
 
         .sideBarItem{
@@ -57,6 +57,7 @@
         }
     </style>
 </head>
+
 <body>
     <header class="headerContainer"><h1>Header Sample</h1></header>
         <div class="mainContainer">
@@ -75,6 +76,6 @@
                     <div class="center"><p>Right Side Bar</p></div>
             </sidebar>
         </div>
-    <footer class="footerContainer">Footer Sample</footer>
+    <footer class="footerContainer"><h1>Footer Sample</h1></footer>
 </body>
 </html>
